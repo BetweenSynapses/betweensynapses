@@ -181,21 +181,6 @@ Dearest gentle readers,
 
 </div>
 
-
-<!-- 🌙 CATEGORIES UNDER LATEST POST -->
-<div class="card">
-
-<h2>🧩 Categories</h2>
-
-<div class="cat" onclick="filter('all')">📃 All</div>
-<div class="cat" onclick="filter('thoughts')">🌙 Thoughts</div>
-<div class="cat" onclick="filter('essays')">📖 Essays</div>
-<div class="cat" onclick="filter('medicine')">🧠 Medicine</div>
-<div class="cat" onclick="filter('art')">🎨 Art</div>
-<div class="cat" onclick="filter('questions')">❓ Questions</div>
-
-</div>
-
 </section>
 <!-- 📚 BLOG -->
 <section id="blog">
@@ -238,7 +223,7 @@ Dearest gentle readers,
 <h2>👤 About</h2>
 
 <p>
-This started because I had way too much free time and didn’t know what to do with it, so I made this little space instead of letting my thoughts just disappear into scrolling.
+Hi this side of the screen is Sijan. This started because I had way too much free time and didn’t know what to do with it, so I made this little space instead of letting my thoughts just disappear into scrolling.
 <p>
 I end up doing a bit of everything—writing, drawing, design, architecture, reading, programming. It doesn’t feel separate in my head. It all kind of blends together anyway.
 <p>
@@ -286,18 +271,6 @@ document.getElementById(id).classList.add("active");
 }
 
 /* category filter (visual only for now) */
-function filter(cat){
-
-show('blog');
-
-let posts = document.querySelectorAll(".post");
-
-posts.forEach(p=>{
-if(cat === "all") p.style.display = "block";
-else p.style.display = (p.dataset.cat === cat) ? "block" : "none";
-});
-
-}
 
 </script>
 
