@@ -175,18 +175,6 @@ border-radius:18px;
 text-align:center;
 
 box-shadow:0 5px 15px rgba(0,0,0,.05);
- /* 🌙 CATEGORIES */
-.cat {
-  display: inline-block;
-  margin: 6px 8px 0 0;
-  padding: 8px 14px;
-  border-radius: 18px;
-  background: #fff;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-  font-size: 13px;
-  color: #6b556a;
-  cursor: pointer;
-  transition: 0.2s;
 }
 
 .cat:hover {
