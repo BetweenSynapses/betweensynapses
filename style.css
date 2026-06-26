@@ -1,1 +1,14 @@
+.post{
+display:block;
+padding:12px 0;
+border-bottom:1px solid #f0e6ea;
+text-decoration:none;
+color:#4d3f4c;
+transition:.2s;
+cursor:pointer;
+}
 
+.post:hover{
+padding-left:6px;
+color:#7a5f7d;
+}
