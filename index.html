@@ -3,14 +3,120 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Between Synapses</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+<style>
 
-<link rel="stylesheet" href="style.css">
+body{
+margin:0;
+font-family:Quicksand,sans-serif;
+background:linear-gradient(135deg,#fff7f2,#fffdf9);
+color:#5b4b5a;
+}
+
+.container{
+max-width:800px;
+margin:auto;
+padding:40px;
+}
+
+header{
+text-align:center;
+margin-bottom:20px;
+}
+
+h1{
+font-family:"Cormorant Garamond",serif;
+font-size:3rem;
+margin:10px 0;
+}
+
+.subtitle{
+color:#9a8796;
+font-size:14px;
+}
+
+nav{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:10px;
+margin:25px 0;
+}
+
+nav button{
+background:none;
+border:none;
+cursor:pointer;
+padding:8px 14px;
+border-radius:20px;
+color:#7a5f7d;
+transition:0.3s;
+font-size:14px;
+}
+
+nav button:hover{
+background:#f7d9e8;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:22px;
+box-shadow:0 10px 25px rgba(0,0,0,0.07);
+margin-bottom:20px;
+}
+
+.hidden{
+display:none;
+}
+
+.tag{
+background:#ffe6ef;
+padding:5px 10px;
+border-radius:15px;
+font-size:12px;
+}
+
+.small{
+font-size:13px;
+color:#8b7a88;
+}
+
+.post{
+border-bottom:1px solid #eee;
+padding:10px 0;
+}
+
+.post:last-child{
+border:none;
+}
+
+.categories{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+}
+
+.categories div{
+background:#fff;
+padding:15px;
+border-radius:16px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+text-align:center;
+}
+
+footer{
+text-align:center;
+font-size:13px;
+color:#a28b9d;
+margin-top:30px;
+}
+
+</style>
 </head>
 
 <body>
@@ -18,62 +124,111 @@
 <div class="container">
 
 <header>
-
-<p class="emoji">☁️ 🧠 ✨</p>
-
-<h1>Between Synapses</h1>
-
-<p class="subtitle">
-A tiny corner of the internet where neurons gossip.
-</p>
-
+<h1>☁️ Between Synapses 🧠</h1>
+<div class="subtitle">a tiny notebook for thoughts that drift around ✨</div>
 </header>
 
 <nav>
-
-<a href="#">Home</a>
-<a href="#">Blog</a>
-<a href="#">About</a>
-
+<button onclick="show('home')">🏠 Home</button>
+<button onclick="show('blog')">📚 Blog</button>
+<button onclick="show('about')">👤 About</button>
+<button onclick="show('categories')">🧩 Categories</button>
 </nav>
 
-<section class="card">
+<!-- HOME -->
+<div id="home" class="card">
 
-<span class="tag">🌿 Latest Post</span>
+<span class="tag">🌿 latest thought</span>
 
- <p class="quote">
-A notebook that's accidentally connected to the internet.
-</p>
-<h2>The Anatomy of Curiosity</h2>
+<h2>🫀 The Anatomy of Curiosity</h2>
+
+<p class="small">📅 Jan 2026</p>
+
 <p>
-Hi, I'm Sijan.
+A small reflection on how curiosity works like a reflex, not a decision.
 </p>
+
+</div>
+
+<!-- BLOG -->
+<div id="blog" class="card hidden">
+
+<h2>📚 Blog Archive</h2>
+
+<div class="post">
+<b>🫀 The Anatomy of Curiosity</b>
+<div class="small">📅 Jan 2026</div>
+</div>
+
+<div class="post">
+<b>🌙 Why I Started This</b>
+<div class="small">📅 Dec 2025</div>
+</div>
+
+<div class="post">
+<b>🧠 Random Thoughts at 2AM</b>
+<div class="small">📅 Nov 2025</div>
+</div>
+
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="card hidden">
+
+<h2>👤 About me</h2>
+
 <p>
-Medicine, psychology, random questions at 2 AM,
-and the beautiful chaos between them.
+This started because I had too much free time and didn’t know what to do with it,
+so I built this instead of letting everything dissolve into scrolling.
 </p>
 
-<button>Read More →</button>
+<p>
+I move between writing ✍️, drawing 🎨, design 🏛️, reading 📖, and programming 💻.
+Medicine 🫀 is the thing I keep coming back to.
+</p>
 
-</section>
+<p>
+Nothing here is final. Not even me 🌙.
+</p>
 
-<section class="categories">
+</div>
 
+<!-- CATEGORIES -->
+<div id="categories" class="card hidden">
+
+<h2>🧩 Categories</h2>
+
+<div class="categories">
 <div>🧠 Medicine</div>
-<div>📃 Poetrys</div>
 <div>📖 Essays</div>
 <div>🌙 Thoughts</div>
-<div> ❔Qestions</div>
-    
-</section>
+<div>🎨 Art</div>
+<div>❓ Questions</div>
+<div>📷 Pictures</div>
+</div>
+
+</div>
 
 <footer>
-
-Whatever finds its way between synapses.✨
-
+✨ whatever finds its way between synapses ✨
 </footer>
 
 </div>
+
+<script>
+
+function show(page){
+
+document.getElementById("home").classList.add("hidden");
+document.getElementById("blog").classList.add("hidden");
+document.getElementById("about").classList.add("hidden");
+document.getElementById("categories").classList.add("hidden");
+
+document.getElementById(page).classList.remove("hidden");
+
+}
+
+</script>
 
 </body>
 </html>
