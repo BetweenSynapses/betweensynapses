@@ -1,23 +1,33 @@
 .icon-row{
   display:flex;
-  justify-content:space-around;
+  justify-content:space-between;
+  gap:12px;
   margin-top:18px;
 }
 
-.icon{
+.icon-box{
+  flex:1;
+  background:white;
+  border-radius:16px;
+  padding:14px 10px;
   text-align:center;
   cursor:pointer;
-  font-size:22px;
-  color:#7a5f7d;
+  box-shadow:0 8px 18px rgba(0,0,0,0.06);
   transition:0.2s;
+  border:1px solid #f0e6ea;
 }
 
-.icon div{
-  font-size:12px;
-  margin-top:4px;
-}
-
-.icon:hover{
+.icon-box:hover{
   transform:translateY(-3px);
-  color:#5a3f5d;
+  background:#f7d9e8;
+}
+
+.icon{
+  font-size:22px;
+}
+
+.label{
+  font-size:12px;
+  margin-top:6px;
+  color:#6b556a;
 }
