@@ -2,3 +2,18 @@ first-post.html
 <a class="post" href="posts/first-blog.html">
 🫀 First Blog
 </a>
+<section id="post1">
+
+<div class="card">
+<h2>🫀First blog </h2>
+<p>“Dearest gentle readers, 
+  Today marks the first day of this blog — though calling it a ‘beginning’ feels slightly dishonest, as if something has been carefully planned when in reality it is more like a quiet spill of thoughts finally finding a surface to land on.
+  I don’t entirely know what this space will become. Maybe it will stay consistent, maybe it will fracture into fragments of ideas that don’t always agree with each other. Maybe it will hold clarity on some days and nothing but noise on others. But I think that’s the point — not to present something polished, but to let it exist while it is still forming.
+ <p>
+  There is something strange about starting something that will be seen by others. It makes you aware of your own thinking in a way that feels slightly invasive, like noticing your reflection mid-movement. Still, I wanted a place where thoughts don’t have to be immediately useful or resolved. Just recorded. Just allowed.
+  So this is the first mark. Not a statement of who I am, or what this will be, but simply evidence that I started. That I wrote something down instead of letting it dissolve. And perhaps that is enough for today.”
+</p>
+<div class="back" onclick="show('blog')">← back</div>
+</div>
+
+</section>
