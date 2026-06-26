@@ -83,31 +83,7 @@ border-radius:22px;
 box-shadow:0 10px 25px rgba(0,0,0,0.06);
 margin-bottom:22px;
 }
-<section id="poems">
-
-<div class="card">
-  <h2>🎭 Poems</h2>
-  <p>Your poems go here.</p>
-</div>
-
-</section>
-
-<section id="arts">
-
-<div class="card">
-  <h2>🎨 Art</h2>
-  <p>Your art posts go here.</p>
-</div>
-
-</section>
-
-<section id="quotes">
-
-<div class="card">
-  <h2>💬 Quotes</h2>
-  <p>Your quotes go here.</p>
-</div>
-
+\
 </section>
 /* 🌙 TYPOGRAPHY */
 h2{
@@ -116,7 +92,25 @@ font-size:1.7rem;
 margin-bottom:12px;
 color:#4a3b4a;
 }
+  
+<div class="quick-links">
 
+    <a class="quick-card" onclick="show('poems')">
+        <span>📜</span>
+        <p>Poems</p>
+    </a>
+
+    <a class="quick-card" onclick="show('arts')">
+        <span>🎨</span>
+        <p>Sketchbook</p>
+    </a>
+
+    <a class="quick-card" onclick="show('essays')">
+        <span>📖</span>
+        <p>Essays</p>
+    </a>
+
+</div>
 p{
 font-size:16px;
 line-height:1.85;
@@ -263,21 +257,94 @@ It is an ongoing notebook—part reflection, part experiment, part memory. Thing
 This is just a soft place where thoughts stay instead of disappearing.
 </p>
 
+<section id="poems">
+
+<div class="card">
+
+<h2>📜 Poems</h2>
+
+<div class="post" onclick="openPost('poem1')">
+🌙 The Moon Borrowed My Name
+<br>
+<small>June 30, 2026</small>
 </div>
+
+<div class="post" onclick="openPost('poem2')">
+☁️ Another Poem
+<br>
+<small>July 2, 2026</small>
+</div>
+<section id="poem1">
+
+<div class="card">
+
+<h2>🌙 The Moon Borrowed My Name</h2>
+
+<p>
+Write your entire poem here...
+</p>
+
+<div class="back" onclick="show('poems')">
+← Back to Poems
+</div>
+
+</div>
+
 </section>
-<div class="icon-column">
+  <section id="essays">
 
-  <div class="icon" onclick="showSection('poems')">
-    📃<div>Poems</div>
-  </div>
+<div class="card">
 
-  <div class="icon" onclick="showSection('arts')">
-    🎨<div>Art</div>
-  </div>
+<h2>📖 Essays</h2>
 
-  <div class="icon" onclick="showSection('quotes')">
-    💬<div>Quotes</div>
-  </div>
+<div class="post" onclick="openPost('essay1')">
+
+The Art of Overthinking
+
+<br>
+
+<small>July 2026</small>
+
+</div>
+
+</div>
+
+</section>
+  <section id="essay1">
+
+<div class="card">
+
+<h2>The Art of Overthinking</h2>
+
+<p>
+Your essay goes here...
+</p>
+
+<div class="back" onclick="show('essays')">
+← Back to Essays
+</div>
+
+</div>
+
+</section>
+  <section id="arts">
+
+<div class="card">
+
+<h2>🎨 Sketchbook</h2>
+
+<div class="post" onclick="openPost('art1')">
+
+🏛 Architectural Sketches
+
+</div>
+
+</div>
+
+</section>
+</div>
+
+</section>
 
 </div>
 </section>
