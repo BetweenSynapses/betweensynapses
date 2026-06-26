@@ -1,19 +1,76 @@
-first-post.html 
-<a class="post" href="posts/first-blog.html">
-🫀 First Blog
-</a>
-<section id="post1">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>First Blog | Between Synapses</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:Quicksand,sans-serif;
+    background:#fff7f2;
+    color:#4d3f4c;
+}
+
+.container{
+    max-width:720px;
+    margin:auto;
+    padding:45px 25px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+h1{
+    font-family:"Cormorant Garamond",serif;
+}
+
+p{
+    line-height:1.8;
+}
+
+.back{
+    display:inline-block;
+    margin-top:25px;
+    text-decoration:none;
+    color:#7a5f7d;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
 
 <div class="card">
-<h2>🫀First blog </h2>
-<p>“Dearest gentle readers, 
-  Today marks the first day of this blog — though calling it a ‘beginning’ feels slightly dishonest, as if something has been carefully planned when in reality it is more like a quiet spill of thoughts finally finding a surface to land on.
-  I don’t entirely know what this space will become. Maybe it will stay consistent, maybe it will fracture into fragments of ideas that don’t always agree with each other. Maybe it will hold clarity on some days and nothing but noise on others. But I think that’s the point — not to present something polished, but to let it exist while it is still forming.
- <p>
-  There is something strange about starting something that will be seen by others. It makes you aware of your own thinking in a way that feels slightly invasive, like noticing your reflection mid-movement. Still, I wanted a place where thoughts don’t have to be immediately useful or resolved. Just recorded. Just allowed.
-  So this is the first mark. Not a statement of who I am, or what this will be, but simply evidence that I started. That I wrote something down instead of letting it dissolve. And perhaps that is enough for today.”
+
+<h1>🫀 First Blog</h1>
+
+<p>
+Dearest gentle readers,
 </p>
-<div class="back" onclick="show('blog')">← back</div>
+
+<p>
+Today marks the first day of this blog...
+</p>
+
+<a class="back" href="../index.html">
+← Back Home
+</a>
+
 </div>
 
-</section>
+</div>
+
+</body>
+</html>
