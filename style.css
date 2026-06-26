@@ -1,1 +1,37 @@
 
+.quick-links{
+    display:flex;
+    gap:12px;
+    margin-top:25px;
+}
+
+.quick-card{
+    flex:1;
+    background:#ffffff;
+    border-radius:18px;
+    padding:18px 10px;
+    text-align:center;
+    text-decoration:none;
+    color:#5b4b5a;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+    transition:.25s;
+    cursor:pointer;
+}
+
+.quick-card:hover{
+    transform:translateY(-4px);
+    background:#fff3f8;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+.quick-card span{
+    display:block;
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.quick-card p{
+    margin:0;
+    font-size:14px;
+    font-weight:600;
+}
