@@ -181,6 +181,13 @@ box-shadow:0 5px 15px rgba(0,0,0,.05);
   transform: translateY(-2px);
   background: #f7d9e8;
 }
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #a28b9d;
+  padding: 20px 10px;
+  word-break: keep-all;
+}
 
 footer{
 
